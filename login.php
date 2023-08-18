@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="loginBody">
-    <div class="topcontainerL">
-    </div>
+
     <div class="containerL">
+    <div class="topcontainerL"></div>
     <form action="check.php" method="POST">
         <div class="login"><h4>Log In</h4></div>
         <label for=UserName">User Name:</label>
