@@ -26,7 +26,7 @@ require 'dbc.php';
         if($checkResult>0){
             $row=mysqli_fetch_assoc($result);
             if($pwd===$row['pwd']){
-                require 'image.html';
+                require 'index.html';
             }
             else{
                 echo "<div class='errormsgL'>invalid user name or password, please try again</div>";

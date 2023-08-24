@@ -16,15 +16,10 @@ require 'dbc.php';
     $Email=$_POST['Email'];
     $pwd=$_POST['password'];
     
-    if(empty($U_name) or empty($Nic) or empty($Email) or empty($pwd)){
-        echo "<div class='errorSU'>seems somthing is require</div>";
-        require 'signup.php';
-    }else{
         $sql="INSERT INTO user(userName,NIC,email,pwd) VALUES('$U_name','$Nic','$Email','$pwd');";
         $result=mysqli_query($connect,$sql);
         
         header("LOCATION:signup.php?signup successful");
-    }
     ?>
 </body>
 </html>
